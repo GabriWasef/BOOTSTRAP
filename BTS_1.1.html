@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTS 1.1 - Bootstrap Basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-primary mb-4">Esercizio BTS_1.1 - Bootstrap Basics</h1>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h3>Domanda 1: A cosa serve Bootstrap?</h3>
+            </div>
+            <div class="card-body">
+                <p><strong>Bootstrap</strong> è un framework di sviluppo front-end open-source che serve a creare siti web e applicazioni web <strong>responsive</strong> e <strong>mobile-first</strong>.</p>
+                <p>Principali utilizzi:</p>
+                <ul>
+                    <li>Semplifica la creazione di interfacce web moderne e professionali</li>
+                    <li>Fornisce componenti CSS e JavaScript predefiniti (navbar, moduli, pulsanti, card, etc.)</li>
+                    <li>Include un potente sistema a griglia per creare layout responsive</li>
+                    <li>Garantisce compatibilità cross-browser</li>
+                    <li>Riduce i tempi di sviluppo grazie a classi riutilizzabili</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h3>Domanda 2: Cosa devi importare per creare una pagina web con Bootstrap?</h3>
+            </div>
+            <div class="card-body">
+                <p>Per utilizzare Bootstrap 5 in una pagina web, devi importare:</p>
+                
+                <h5 class="mt-3">1. File CSS di Bootstrap (nella &lt;head&gt;):</h5>
+                <pre class="bg-light p-3"><code>&ltlink href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt</code></pre>
+                
+                <h5 class="mt-3">2. File JavaScript di Bootstrap (prima della chiusura &lt;/body&gt;):</h5>
+                <pre class="bg-light p-3"><code>&ltscript src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"&gt&lt/script&gt</code></pre>
+                
+                <h5 class="mt-3">3. Meta tag viewport (nella &lt;head&gt;):</h5>
+                <pre class="bg-light p-3"><code>&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt</code></pre>
+                
+                <div class="alert alert-info mt-3">
+                    <strong>Nota:</strong> Bootstrap 5 non richiede più jQuery, a differenza delle versioni precedenti.
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-warning">
+                <h3>Domanda 3: Cos'è un CDN? Che vantaggi comporta?</h3>
+            </div>
+            <div class="card-body">
+                <p><strong>CDN (Content Delivery Network)</strong> è una rete di server distribuiti geograficamente in tutto il mondo che ospitano e distribuiscono contenuti statici come librerie CSS e JavaScript.</p>
+                
+                <h5 class="mt-3">Vantaggi di usare un CDN:</h5>
+                <ul>
+                    <li><strong>Velocità di caricamento:</strong> i file vengono serviti dal server più vicino alla posizione geografica dell'utente, riducendo la latenza</li>
+                    <li><strong>Caching del browser:</strong> se l'utente ha già visitato altri siti che usano lo stesso CDN, i file saranno già in cache e il caricamento sarà istantaneo</li>
+                    <li><strong>Riduzione del carico sul server:</strong> i file statici vengono serviti dal CDN, alleggerendo il tuo server</li>
+                    <li><strong>Affidabilità:</strong> se un server CDN non è disponibile, il traffico viene automaticamente reindirizzato ad altri server</li>
+                    <li><strong>Larghezza di banda:</strong> risparmio sui costi di bandwidth del tuo hosting</li>
+                    <li><strong>Sicurezza:</strong> protezione contro attacchi DDoS</li>
+                </ul>
+                
+                <div class="alert alert-warning mt-3">
+                    <strong>Svantaggio:</strong> Richiede una connessione internet attiva. Per lavorare offline è necessario scaricare Bootstrap localmente.
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h3>Domanda 4: A cosa serve il meta tag viewport?</h3>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3"><code>&ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt</code></pre>
+                
+                <p class="mt-3">Questo meta tag è <strong>fondamentale per il responsive design</strong> e serve a:</p>
+                <ul>
+                    <li><strong>width=device-width:</strong> imposta la larghezza della viewport uguale alla larghezza dello schermo del dispositivo (320px su smartphone, 768px su tablet, ecc.)</li>
+                    <li><strong>initial-scale=1:</strong> imposta il livello di zoom iniziale al 100% quando la pagina viene caricata per la prima volta</li>
+                </ul>
+                
+                <h5 class="mt-3">Perché è importante?</h5>
+                <p>Senza questo tag, i browser mobili renderizzerebbero la pagina con una larghezza desktop (tipicamente 980px) e la ridimensionerebbero per farla entrare nello schermo, rendendo il testo molto piccolo e difficile da leggere.</p>
+                
+                <p>Con il meta tag viewport, diamo al browser istruzioni precise su come gestire le dimensioni della pagina, permettendo al nostro layout responsive di funzionare correttamente su tutti i dispositivi.</p>
+                
+                <div class="alert alert-success mt-3">
+                    <strong>Risultato:</strong> La pagina si adatta perfettamente allo schermo del dispositivo senza necessità di zoom o scroll orizzontale.
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header bg-danger text-white">
+                <h3>Domanda 5: Differenza tra "container" e "container-fluid"</h3>
+            </div>
+            <div class="card-body">
+                <h5>Container (.container)</h5>
+                <ul>
+                    <li>Ha una <strong>larghezza massima fissa</strong> che varia in base ai breakpoint</li>
+                    <li>È <strong>centrato</strong> nella pagina con margini laterali</li>
+                    <li>La larghezza si adatta ai breakpoint:
+                        <ul>
+                            <li>< 576px: 100% width</li>
+                            <li>≥ 576px (sm): max-width 540px</li>
+                            <li>≥ 768px (md): max-width 720px</li>
+                            <li>≥ 992px (lg): max-width 960px</li>
+                            <li>≥ 1200px (xl): max-width 1140px</li>
+                            <li>≥ 1400px (xxl): max-width 1320px</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ideale per:</strong> contenuti centrali, layout standard con larghezza controllata</li>
+                </ul>
+                
+                <h5 class="mt-4">Container-Fluid (.container-fluid)</h5>
+                <ul>
+                    <li>Ha sempre <strong>larghezza 100%</strong> del viewport</li>
+                    <li>Si estende da bordo a bordo dello schermo</li>
+                    <li>Non ha margini laterali</li>
+                    <li><strong>Ideale per:</strong> header, footer, sezioni a tutta larghezza, gallerie fotografiche</li>
+                </ul>
+                
+                <div class="alert alert-primary mt-3">
+                    <strong>Consiglio:</strong> Spesso si combinano i due: container-fluid per header/footer e container per il contenuto principale.
+                </div>
+                
+                <p class="mt-3"><em>Vedi la pagina BTS_1.1.1.html per una dimostrazione pratica della differenza!</em></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
