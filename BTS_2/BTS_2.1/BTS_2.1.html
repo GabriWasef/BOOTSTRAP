@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTS 2.1 - Tipografia Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid bg-dark text-white py-4 mb-4">
+        <div class="container">
+            <h1 class="text-center">Esercizio BTS_2.1</h1>
+            <h2 class="text-center">Tipografia Bootstrap 5</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Domande teoriche -->
+        <div class="row mb-5">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-primary">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Domanda 1</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dimensione testo di default</h5>
+                        <p><strong>Risposta:</strong></p>
+                        <p>Bootstrap 5 utilizza una dimensione del testo di default di <span class="badge bg-info">1rem</span>, che equivale a <span class="badge bg-info">16px</span> per impostazione predefinita del browser.</p>
+                        <hr>
+                        <p class="small text-muted">La dimensione può essere personalizzata modificando la variabile Sass $font-size-base.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-success">
+                    <div class="card-header bg-success text-white">
+                        <h4>Domanda 2</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Font di default</h5>
+                        <p><strong>Risposta:</strong></p>
+                        <p>Bootstrap 5 utilizza un <strong>"native font stack"</strong> o "system font stack" che include:</p>
+                        <ul class="small">
+                            <li>system-ui</li>
+                            <li>-apple-system (Safari/macOS)</li>
+                            <li>"Segoe UI" (Windows)</li>
+                            <li>Roboto (Android)</li>
+                            <li>"Helvetica Neue"</li>
+                            <li>Arial</li>
+                            <li>sans-serif</li>
+                        </ul>
+                        <p class="small text-muted">Questo garantisce rendering ottimale su ogni dispositivo e OS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-warning">
+                    <div class="card-header bg-warning">
+                        <h4>Domanda 3</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Margini del paragrafo</h5>
+                        <p><strong>Risposta:</strong></p>
+                        <p>I paragrafi (&lt;p&gt;) in Bootstrap 5 hanno:</p>
+                        <ul>
+                            <li><strong>margin-top:</strong> <span class="badge bg-danger">0</span></li>
+                            <li><strong>margin-bottom:</strong> <span class="badge bg-danger">1rem</span> (16px)</li>
+                        </ul>
+                        <hr>
+                        <p class="small text-muted">Questo permette una spaziatura uniforme tra i paragrafi senza spazi vuoti all'inizio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Domanda 4: Tag speciali -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-info">
+                    <div class="card-header bg-info text-white">
+                        <h3>Domanda 4 - Tag Speciali</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5>Dimostrazione tag: &lt;dl&gt;, &lt;blockquote&gt;, &lt;abbr&gt;, &lt;mark&gt;</h5>
+                        
+                        <!-- Definition List -->
+                        <div class="mb-4">
+                            <h6 class="text-primary">Tag &lt;dl&gt; (Definition List)</h6>
+                            <dl class="row">
+                                <dt class="col-sm-3">Bootstrap</dt>
+                                <dd class="col-sm-9">Framework CSS per sviluppo web responsive e mobile-first</dd>
+                                
+                                <dt class="col-sm-3">HTML5</dt>
+                                <dd class="col-sm-9">Linguaggio di markup per la struttura delle pagine web</dd>
+                                
+                                <dt class="col-sm-3">Responsive Design</dt>
+                                <dd class="col-sm-9">Approccio di design che rende le pagine web adattabili a diverse dimensioni di schermo</dd>
+                            </dl>
+                        </div>
+
+                        <!-- Blockquote -->
+                        <div class="mb-4">
+                            <h6 class="text-success">Tag &lt;blockquote&gt; (Citazione)</h6>
+                            <blockquote class="blockquote">
+                                <p>"Il design non è solo come appare e come si sente. Il design è come funziona."</p>
+                                <footer class="blockquote-footer">Steve Jobs</footer>
+                            </blockquote>
+                        </div>
+
+                        <!-- Abbreviation -->
+                        <div class="mb-4">
+                            <h6 class="text-warning">Tag &lt;abbr&gt; (Abbreviazione)</h6>
+                            <p>Il termine <abbr title="HyperText Markup Language">HTML</abbr> è fondamentale nello sviluppo web.</p>
+                            <p>Utilizza <abbr title="Cascading Style Sheets">CSS</abbr> per lo styling delle pagine.</p>
+                            <p>Bootstrap utilizza <abbr title="Content Delivery Network">CDN</abbr> per distribuire i file.</p>
+                        </div>
+
+                        <!-- Mark -->
+                        <div class="mb-4">
+                            <h6 class="text-danger">Tag &lt;mark&gt; (Evidenziazione)</h6>
+                            <p>Puoi evidenziare <mark>parole importanti</mark> usando il tag mark.</p>
+                            <p>Bootstrap applica automaticamente uno <mark>sfondo giallo</mark> al testo evidenziato.</p>
+                            <p>Questo è utile per <mark>attirare l'attenzione</mark> su informazioni cruciali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Domanda 5: Stili di testo -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark text-white">
+                        <h3>Domanda 5 - Stili di Testo</h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        <!-- Bold -->
+                        <div class="mb-3">
+                            <h6 class="text-primary">a. Bold (Grassetto)</h6>
+                            <p class="fw-bold">Questo paragrafo utilizza la classe .fw-bold per rendere il testo in grassetto. Il testo grassetto è ideale per enfatizzare concetti importanti.</p>
+                            <p class="fw-bolder">Questo paragrafo usa .fw-bolder per un grassetto ancora più marcato rispetto all'elemento genitore.</p>
+                        </div>
+
+                        <!-- Italic -->
+                        <div class="mb-3">
+                            <h6 class="text-success">b. Italic (Corsivo)</h6>
+                            <p class="fst-italic">Questo paragrafo utilizza la classe .fst-italic per rendere il testo in corsivo. Il corsivo è spesso usato per citazioni o per dare enfasi leggera.</p>
+                            <p><em>Oppure puoi usare il tag &lt;em&gt; per ottenere lo stesso effetto semantico.</em></p>
+                        </div>
+
+                        <!-- Light -->
+                        <div class="mb-3">
+                            <h6 class="text-info">c. Light (Leggero)</h6>
+                            <p class="fw-light">Questo paragrafo utilizza la classe .fw-light per un font-weight leggero. Il testo leggero è utile per contenuti secondari o note.</p>
+                            <p class="fw-lighter">La classe .fw-lighter rende il testo ancora più leggero rispetto all'elemento genitore.</p>
+                        </div>
+
+                        <!-- Centrato -->
+                        <div class="mb-3">
+                            <h6 class="text-warning">d. Centrato</h6>
+                            <p class="text-center">Questo paragrafo è centrato usando la classe .text-center. Il testo centrato è perfetto per titoli, citazioni o contenuti che devono attirare l'attenzione al centro della pagina.</p>
+                        </div>
+
+                        <!-- Allineato a destra -->
+                        <div class="mb-3">
+                            <h6 class="text-danger">e. Allineato a destra</h6>
+                            <p class="text-end">Questo paragrafo è allineato a destra usando la classe .text-end. L'allineamento a destra è spesso usato per firme, date o elementi che devono apparire sulla destra.</p>
+                        </div>
+
+                        <!-- Lista inline -->
+                        <div class="mb-3">
+                            <h6 class="text-secondary">f. List-inline (Lista orizzontale)</h6>
+                            <p class="mb-2"><strong>Cose che mi fanno innervosire:</strong></p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">🚗 Traffico intenso</li>
+                                <li class="list-inline-item">⏰ Sveglie che suonano troppo presto</li>
+                                <li class="list-inline-item">📱 Batteria del telefono scarica</li>
+                                <li class="list-inline-item">🌧️ Pioggia improvvisa senza ombrello</li>
+                                <li class="list-inline-item">💻 Computer lento</li>
+                                <li class="list-inline-item">📶 Connessione internet instabile</li>
+                                <li class="list-inline-item">🔋 Caricabatterie dimenticato</li>
+                            </ul>
+                            <p class="small text-muted">La classe .list-inline rimuove i bullet point e dispone gli elementi orizzontalmente.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Note aggiuntive -->
+        <div class="alert alert-info mt-4" role="alert">
+            <h5 class="alert-heading">📚 Riferimenti</h5>
+            <p class="mb-0">Tutte le informazioni sono tratte dalla documentazione ufficiale di Bootstrap 5 e da W3Schools Bootstrap 5 Text/Typography.</p>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">🎓 Esercizio completato - BTS_2.1 | Bootstrap 5 Tipografia</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTS 2.2 - Colori Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid bg-gradient bg-dark text-white py-4 mb-4">
+        <div class="container">
+            <h1 class="text-center">Esercizio BTS_2.2</h1>
+            <h2 class="text-center">Colori e Opacità Bootstrap 5</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <!-- Domanda 1: Classi di colori testo -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-primary">
+                    <div class="card-header bg-primary text-white">
+                        <h3>Domanda 1 - Classi di Colore Testo</h3>
+                        <p class="mb-0">Lista &lt;dl&gt; che descrive le classi di colore per il testo</p>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-3 text-muted">.text-muted</dt>
+                            <dd class="col-sm-9">Rappresenta testo disattivato o secondario con un colore grigio chiaro. Utile per note, disclaimer o informazioni meno importanti.</dd>
+
+                            <dt class="col-sm-3 text-primary">.text-primary</dt>
+                            <dd class="col-sm-9">Indica un elemento principale o importante con colore blu. È il colore primario del tema Bootstrap, usato per evidenziare azioni o contenuti chiave.</dd>
+
+                            <dt class="col-sm-3 text-success">.text-success</dt>
+                            <dd class="col-sm-9">Denota un'operazione riuscita o uno stato positivo con colore verde. Perfetto per messaggi di conferma, completamento task o feedback positivi.</dd>
+
+                            <dt class="col-sm-3 text-info">.text-info</dt>
+                            <dd class="col-sm-9">Rappresenta informazioni neutre o messaggi informativi con colore azzurro/ciano. Utile per suggerimenti, note informative o contenuti di approfondimento.</dd>
+
+                            <dt class="col-sm-3 text-warning">.text-warning</dt>
+                            <dd class="col-sm-9">Denota un avviso o un'attenzione necessaria con colore giallo. Usato per avvertimenti, contenuti che richiedono cautela o operazioni in sospeso.</dd>
+
+                            <dt class="col-sm-3 text-danger">.text-danger</dt>
+                            <dd class="col-sm-9">Rappresenta un pericolo o un errore con colore rosso. Ideale per messaggi di errore, operazioni fallite o contenuti critici che richiedono attenzione immediata.</dd>
+
+                            <dt class="col-sm-3 text-secondary">.text-secondary</dt>
+                            <dd class="col-sm-9">Indica contenuto secondario con colore grigio. Usato per testo di supporto, sottotitoli o elementi di minore importanza visiva.</dd>
+
+                            <dt class="col-sm-3"><span class="text-white bg-dark px-2">.text-white</span></dt>
+                            <dd class="col-sm-9">Cambia il colore del testo in bianco. Perfetto per testi su sfondi scuri o per contrasti elevati.</dd>
+
+                            <dt class="col-sm-3 text-dark">.text-dark</dt>
+                            <dd class="col-sm-9">Applica un colore nero/grigio scuro al testo. Usato per testi principali su sfondi chiari o per contenuti che necessitano di forte contrasto.</dd>
+
+                            <dt class="col-sm-3 text-body">.text-body</dt>
+                            <dd class="col-sm-9">Usa il colore di default del body (solitamente nero o grigio molto scuro). È il colore standard per il testo normale del documento.</dd>
+
+                            <dt class="col-sm-3 text-light">.text-light</dt>
+                            <dd class="col-sm-9">Applica un colore grigio chiaro al testo. Utile per testi secondari o elementi che devono avere visibilità ridotta.</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Domanda 2: Classi background colori -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-success">
+                    <div class="card-header bg-success text-white">
+                        <h3>Domanda 2 - Classi di Colore Sfondo</h3>
+                        <p class="mb-0">Lista con colori di sfondo invece che di testo</p>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row mb-0">
+                            <dt class="col-sm-3"><span class="bg-secondary text-white px-2 py-1">.bg-secondary</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-secondary text-white mb-2">
+                                    Sfondo grigio secondario. Usato per sezioni meno importanti, elementi di supporto o per creare separazioni visive tra contenuti.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-primary text-white px-2 py-1">.bg-primary</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-primary text-white mb-2">
+                                    Sfondo blu primario. Rappresenta elementi principali, header importanti, call-to-action o sezioni chiave del sito.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-success text-white px-2 py-1">.bg-success</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-success text-white mb-2">
+                                    Sfondo verde per successo. Perfetto per notifiche di conferma, messaggi di operazioni completate con successo o badge positivi.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-info text-white px-2 py-1">.bg-info</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-info text-white mb-2">
+                                    Sfondo azzurro/ciano informativo. Usato per box informativi, suggerimenti, note o contenuti che forniscono informazioni aggiuntive.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-warning text-dark px-2 py-1">.bg-warning</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-warning text-dark mb-2">
+                                    Sfondo giallo di avvertimento. Ideale per alert di attenzione, messaggi che richiedono cautela o sezioni che necessitano revisione.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-danger text-white px-2 py-1">.bg-danger</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-danger text-white mb-2">
+                                    Sfondo rosso di pericolo. Usato per errori critici, messaggi di eliminazione, avvisi di sicurezza o operazioni irreversibili.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-light border px-2 py-1">.bg-light</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-light border mb-2">
+                                    Sfondo grigio molto chiaro. Perfetto per sezioni alternative, card secondarie o per creare contrasti delicati.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-dark text-white px-2 py-1">.bg-dark</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-dark text-white mb-2">
+                                    Sfondo grigio scuro/nero. Ideale per header, footer, sezioni hero o design con forte contrasto.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-white border px-2 py-1">.bg-white</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-white border mb-2">
+                                    Sfondo bianco puro. Usato per card, modal, contenitori o per resettare lo sfondo su elementi specifici.
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3"><span class="bg-body border px-2 py-1">.bg-body</span></dt>
+                            <dd class="col-sm-9">
+                                <div class="p-3 bg-body border mb-2">
+                                    Sfondo del colore del body (solitamente bianco). Mantiene coerenza con il colore di sfondo principale della pagina.
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Domanda 3: Opacità 50% -->
+        <div class="row mb-5">
+            <div class="col-md-6 mb-3">
+                <div class="card border-info h-100">
+                    <div class="card-header bg-info text-white">
+                        <h4>Domanda 3 - Testo con Opacità 50%</h4>
+                    </div>
+                    <div class="card-body">
+                        <h6>Metodo 1: Classe .text-opacity-50</h6>
+                        <p class="text-primary text-opacity-50">
+                            Questo testo primary ha opacità al 50% usando la classe .text-opacity-50.
+                        </p>
+                        <p class="text-success text-opacity-50">
+                            Questo testo success ha opacità al 50%.
+                        </p>
+                        <p class="text-danger text-opacity-50">
+                            Questo testo danger ha opacità al 50%.
+                        </p>
+
+                        <hr>
+
+                        <h6>Metodo 2: Stile inline</h6>
+                        <p class="text-primary" style="--bs-text-opacity: .5;">
+                            Questo testo primary ha opacità al 50% tramite variabile CSS custom.
+                        </p>
+
+                        <hr>
+
+                        <h6>Altre opacità disponibili</h6>
+                        <p class="text-info text-opacity-25">Opacità 25%</p>
+                        <p class="text-info text-opacity-50">Opacità 50%</p>
+                        <p class="text-info text-opacity-75">Opacità 75%</p>
+                        <p class="text-info">Opacità 100% (default)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Domanda 4: Testo bianco con opacità su sfondo warning -->
+            <div class="col-md-6 mb-3">
+                <div class="card border-warning h-100">
+                    <div class="card-header bg-warning">
+                        <h4>Domanda 4 - Testo Bianco Opacità 50% su Sfondo Warning</h4>
+                    </div>
+                    <div class="card-body">
+                        <h6>Metodo 1: Con classe .text-white e .text-opacity-50</h6>
+                        <div class="p-4 bg-warning">
+                            <p class="text-white text-opacity-50 mb-2">
+                                Questo è testo bianco con opacità al 50% su sfondo warning usando le classi Bootstrap.
+                            </p>
+                            <p class="text-white text-opacity-50 mb-0">
+                                L'opacità ridotta crea un effetto di trasparenza elegante che si fonde con lo sfondo giallo.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <h6>Metodo 2: Con stile inline</h6>
+                        <div class="p-4 bg-warning">
+                            <p class="text-white mb-0" style="--bs-text-opacity: .5;">
+                                Stesso effetto ottenuto usando la variabile CSS --bs-text-opacity impostata a 0.5 (50%).
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <h6>Confronto opacità diverse</h6>
+                        <div class="p-3 bg-warning">
+                            <p class="text-white text-opacity-25 mb-1">Testo bianco - Opacità 25%</p>
+                            <p class="text-white text-opacity-50 mb-1">Testo bianco - Opacità 50%</p>
+                            <p class="text-white text-opacity-75 mb-1">Testo bianco - Opacità 75%</p>
+                            <p class="text-white mb-0">Testo bianco - Opacità 100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sezione bonus: combinazioni colori -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-secondary">
+                    <div class="card-header bg-secondary text-white">
+                        <h4>🎨 Bonus - Combinazioni di Colori con Opacità</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3 bg-primary text-white">
+                                    <h6>Background Primary</h6>
+                                    <p class="mb-1 bg-opacity-100">Opacità 100%</p>
+                                    <p class="mb-1 bg-opacity-75">Opacità 75%</p>
+                                    <p class="mb-1 bg-opacity-50">Opacità 50%</p>
+                                    <p class="mb-0 bg-opacity-25">Opacità 25%</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3 bg-success text-white">
+                                    <h6>Background Success</h6>
+                                    <p class="mb-1 text-white">Testo bianco normale</p>
+                                    <p class="mb-1 text-white text-opacity-75">Testo opacità 75%</p>
+                                    <p class="mb-1 text-white text-opacity-50">Testo opacità 50%</p>
+                                    <p class="mb-0 text-white text-opacity-25">Testo opacità 25%</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3 bg-danger text-white">
+                                    <h6>Background Danger</h6>
+                                    <p class="mb-1">Sfondo normale</p>
+                                    <div class="p-2 bg-white bg-opacity-75 text-dark mb-1">Sfondo bianco 75%</div>
+                                    <div class="p-2 bg-white bg-opacity-50 text-dark mb-1">Sfondo bianco 50%</div>
+                                    <div class="p-2 bg-white bg-opacity-25 text-dark">Sfondo bianco 25%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Note aggiuntive -->
+        <div class="alert alert-info" role="alert">
+            <h5 class="alert-heading">📚 Note Importanti</h5>
+            <ul class="mb-0">
+                <li><strong>Bootstrap 5.1+</strong> ha introdotto le utility per l'opacità usando variabili CSS</li>
+                <li>Le classi di opacità funzionano sia per <code>.text-*</code> che per <code>.bg-*</code></li>
+                <li>Valori disponibili: 25, 50, 75, 100</li>
+                <li>Puoi usare valori custom con <code>style="--bs-text-opacity: .X;"</code></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="container-fluid bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">🎓 Esercizio completato - BTS_2.2 | Bootstrap 5 Colori e Opacità</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
